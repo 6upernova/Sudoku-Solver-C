@@ -31,10 +31,13 @@ void parseGridToArray(char* cadena,int sudoku[FILAS][COLUMNAS]){
 	int arrCount = 0;
 	for(int i = 0; i < FILAS; i++){
 		for(int j= 0; j< COLUMNAS; j++){
+      if(cadena[arrCount] == '\r'){
+			    arrCount++;
+      }
 			sudoku[i][j] = cadena[arrCount] - '0';
-			arrCount++;
+      arrCount++;
 		}
-
+    arrCount++;
 	}
 	
 }
@@ -67,9 +70,11 @@ char *readfile(const char *filename) {
 
 void printSudoku(int sudoku[FILAS][COLUMNAS]){
 	for(int i = 0; i<FILAS; i++){
-
 		for(int j = 0; j<COLUMNAS; j++){
 			printf("%d",sudoku[i][j]);
+      printf("|");
+        
+        
 		}
 		printf("\n");
 	}
