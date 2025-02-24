@@ -6,10 +6,13 @@ Used for practicing C and Vim
 1. Clone the repository
 2. Select or copy your incomplete sudoku to a txt file using the format from the [sudokus]('https://github.com/6upernova/Sudoku-Solver-C/tree/main/sudokus') 
 3. Compile the sudoku.c with gcc : 
-    ´gcc -Wall -o sudoku sudoku.c´
+    ´´´sh
+       gcc -Wall -o sudoku sudoku.c
+    ´´´
 4. Execute and pass as an argument your txt file previously created:
-    ´./sudoku sudokuG1.txt´
-
+    ´´´sh
+    ./sudoku sudokuG1.txt
+    ´´    ´´´´
 ## Info About Implementation
 
 The backtracking algorithm explores each and every posible path in order to find a valid solution, in the sudoku case we use recursion to make this happen,
