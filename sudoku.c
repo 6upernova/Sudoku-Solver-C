@@ -84,7 +84,7 @@ void printSudoku(int sudoku[FILAS][COLUMNAS]) {
 
     for (int j = 0; j < COLUMNAS; j++) {
       // Print vertical separator for 3x3 grids
-      if ((j % 3 == 0 && j != 0) || (j == 0 || j == 8)) {
+      if ((j % 3 == 0 && j != 0)) {
         printf("| ");
       }
 
