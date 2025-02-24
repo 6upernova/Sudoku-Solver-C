@@ -24,6 +24,7 @@ int main(int argc, char* argv[]){
 	printf("array:%s\n",fileArr);
 	parseGridToArray(fileArr,sudoku);
 	printSudoku(sudoku);
+  printf("1/3: %d", 1/3);
 	return 0;
 }
 
@@ -79,3 +80,24 @@ void printSudoku(int sudoku[FILAS][COLUMNAS]){
 		printf("\n");
 	}
 }
+
+int isValid(int sudoku[][], int row, int col, int num){
+
+  int toret = 1;
+  
+  //Check if the num is in the row
+  for(int i = 0; i< COLUMNAS && toret; i++){
+    if(sudoku[row][i] = num){
+      toret = 0;
+    }
+  }
+  //Check if the num is in the column
+  for(int j = 0; i< FILAS && toret; j++){
+    if(sudoku[j][col] == num){
+      toret 0;
+    }
+  }
+  
+  //Check if the num is in the 3x3 square
+  
+}  
