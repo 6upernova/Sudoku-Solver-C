@@ -7,7 +7,7 @@ Used for practicing C and Vim
 2. Select or copy your incomplete sudoku to a txt file using the format from the [sudokus]('https://github.com/6upernova/Sudoku-Solver-C/tree/main/sudokus') 
 3. Compile the sudoku.c with gcc : 
     ```sh
-           gcc -Wall -o sudoku sudoku.c
+    gcc -Wall -o sudoku sudoku.c
     ```
 4. Execute and pass as an argument your txt file previously created:
     ```sh 
